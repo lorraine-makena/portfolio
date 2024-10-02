@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lorraine.</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+-->
+</head>
+
+
+<body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="data:image/webp;base64,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" alt="Homepage">
+                            
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+<!--<li><a class="smoothscroll" href="#works">Works</a></li>-->
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Hello</div>
+                        <h1 class="s-intro__content-title">
+                        I'm Lorraine Makena <br>
+                        a programmer and Marketing and Sales Executive<br>
+                        base in Nairobi.
+                        </h1>                            
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+                <li>
+                    <a href="#0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                        <span class="u-screen-reader-text">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                        <span class="u-screen-reader-text">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                        <span class="u-screen-reader-text">Instagram</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.99 2C6.472 2 2 6.473 2 11.99c0 4.232 2.633 7.85 6.35 9.306-.088-.79-.166-2.006.034-2.868.182-.78 1.172-4.966 1.172-4.966s-.299-.599-.299-1.484c0-1.388.805-2.425 1.808-2.425.853 0 1.264.64 1.264 1.407 0 .858-.546 2.139-.827 3.327-.235.994.499 1.805 1.479 1.805 1.775 0 3.141-1.872 3.141-4.575 0-2.392-1.719-4.064-4.173-4.064-2.843 0-4.512 2.132-4.512 4.335 0 .858.331 1.779.744 2.28a.3.3 0 0 1 .069.286c-.076.315-.245.994-.277 1.133-.044.183-.145.222-.335.134-1.247-.581-2.027-2.405-2.027-3.871 0-3.151 2.289-6.045 6.601-6.045 3.466 0 6.159 2.469 6.159 5.77 0 3.444-2.171 6.213-5.184 6.213-1.013 0-1.964-.525-2.29-1.146l-.623 2.374c-.225.868-.834 1.956-1.241 2.62a10 10 0 0 0 2.958.445c5.517 0 9.99-4.473 9.99-9.99S17.507 2 11.99 2"></path></svg>
+                        <span class="u-screen-reader-text">Pinterest</span>
+                    </a>
+                </li>
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg 1x, images/intro-bg.jpg 2x" alt="">
+            </div> <!-- s-intro__content-media -->                
+
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="Lorraine_Makena_Nderitu_CV2.pdf">Get My CV</a>
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div> <!-- end section-header -->
+
+                    <p class="attention-getter">
+                        
+I am a passionate programmer with a strong foundation in HTML, CSS, and JavaScript, and additional expertise in PHP, digital marketing, and SEO. With a unique blend of technical skills and sales experience, I bring a well-rounded approach to problem-solving and delivering results. My journey in coding started while working in sales, where I honed my communication and analytical skills. This background has given me a deep understanding of customer needs and how to craft solutions that not only work seamlessly but also drive business growth.
+
+
+
+
+                    </p>
+
+                    <p class="attention-getter">
+                    My expertise spans both frontend and backend development, enabling me to create user-friendly, functional, and optimized websites. I also leverage my SEO and digital marketing knowledge to ensure that the websites I build are not only technically sound but also perform well in search rankings and user engagement.
+                    </p>
+                    <p class="attention-getter">I am continually learning and evolving my skill set, and I am excited to work on innovative projects that push boundaries and deliver impactful results.
+
+                    </p>
+
+                    <div class="grid-list-items s-about__blocks">
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Experience</h4>
+                            <ul class="s-about__list">
+                                <li>
+                                    Sales
+                                    <span>Smart fibre</span>
+                                </li>
+                                <li>
+                                    Sales lead and customer support
+                                    <span>mamafua</span>
+                                </li>
+                                <li>
+                                    social media manager
+                                    <span>Home of electronics ltd</span>
+                                </li>
+                                <li>
+                                    social media manager
+                                    <span>TechTredz</span>
+                                </li>
+                                
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                    
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Skills</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    digital marketing
+                                </li>
+                                <li>
+                                   SEO
+                                </li>
+                                <li>
+                                   php
+                                </li>
+                                <li>
+                                    Frontend Development
+                                </li>
+                                <li>
+                                   dataprotection
+                                </li>
+                                <li>
+                                   customer support
+                                </li>
+                                <li>
+                                   scripting
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                    </div> <!-- grid-list-items -->
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+
+        
+           
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="02">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">
+                    Whether you're looking to enhance your online presence or need a custom solution, I’m here to help. Reach out to discuss your project, and let’s turn your ideas into reality. Follow me for updates, and feel free to contact me—I’m ready to deliver results you can trust!
+
+
+                    </p>               
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="#0">Facebook</a></li>
+                                <li><a href="#0">Twitter</a></li>
+                                <li><a href="#0">Instagram</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:nderitulorraine1@gmail.com">nderitulorraine1@gmail.com</a></li>
+                                <li><a href="tel:+1975432345">+254111935568</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div> <!-- end section-footer__site-links -->
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:nderitulorraine1@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a href="#0" class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+            <div class="row s-footer__bottom">
+                
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="#0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                                <span class="u-screen-reader-text">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        
+                    </ul> 
+                </div> <!-- end section-footer__social -->
+
+                
+
+            </div> <!-- end section-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
